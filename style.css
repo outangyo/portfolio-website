@@ -54,8 +54,11 @@ body {
 }
 
 h1 {
-    color: var(--color-light);
     font-size: 2.5rem;
+    margin: 0.8rem;
+}
+
+h2 {
     margin: 0.8rem;
 }
 
@@ -105,10 +108,18 @@ main {
 
 .about-me-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 1rem;
     flex-wrap: wrap;
     margin: 2rem 10rem 2rem 10rem;
+}
+
+.about-me-text {
+    margin-right: 1rem;
+}
+
+.profile-pic {
+    margin-left: 6rem;
 }
 
 .profile-pic img {
@@ -118,10 +129,9 @@ main {
     border-radius: var(--border-radius-1);
 }
 
-/* Text container to ensure readable line-length on wider screens */
 .about-me-container>div {
     flex: 1;
-    min-width: 250px;
+    min-width: 200px;
 }
 
 @media (max-width: 600px) {
@@ -158,6 +168,63 @@ main {
 
 .download-button:hover {
     color: var(--color-primary);
+}
+
+.project-header {
+    display: flex;
+    justify-content: center;
+}
+
+.project-header h1 {
+    font-size: 4rem;
+}
+
+.project-grid {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem auto;
+    padding: 0.5rem;
+    gap: 3rem;
+    justify-content: center;
+    align-items: start;
+    max-width: 1250px;
+}
+
+.project-pic {
+    flex: 0 0 400px;
+    height: 300px;
+    border-radius: var(--border-radius-1);
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.project-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-pic img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 900px) {
+    .project-grid {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .project-pic {
+        flex: 0 0 300px;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .project-text {
+        width: 100%;
+        max-width: 100%;
+    }
 }
 
 /* ========================= MAIN END ========================= */
