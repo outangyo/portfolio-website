@@ -40,6 +40,7 @@ html {
     font-size: 16px;
     font-family: poppins, sans-serif;
     scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
 }
 
 body {
@@ -104,6 +105,11 @@ main {
     padding: var(--padding-1);
     margin: 0px;
     flex: 1;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5)),
+        url(./images/wallpaper3.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .about-me-container {
@@ -170,9 +176,15 @@ main {
     color: var(--color-primary);
 }
 
+#projects {
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
 .project-header {
     display: flex;
     justify-content: center;
+    margin-bottom: 2rem;
 }
 
 .project-header h1 {
