@@ -111,6 +111,8 @@ main {
     background-attachment: fixed;
 }
 
+/* ABOUT ME SECTION */
+
 .about-me-container {
     display: flex;
     align-items: flex-start;
@@ -151,29 +153,9 @@ main {
     }
 }
 
-#download-resume {
-    justify-content: center;
-    display: flex;
-    margin-bottom: 8rem;
-}
+/* ABOUT ME SECTION END */
 
-.download-button {
-    display: inline-block;
-    margin-top: 1rem;
-    border-radius: var(--border-radius-2);
-    padding: var(--border-radius-1);
-    background-color: var(--color-dark);
-    color: var(--color-light);
-    font-size: 1.2rem;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    transition: 0.4s;
-}
-
-.download-button:hover {
-    color: var(--color-primary);
-}
+/* PROJECT SECTION */
 
 #projects {
     padding-top: 1rem;
@@ -238,16 +220,162 @@ main {
     }
 }
 
+/* PROJECT SECTION END */
+
+/* CERTIFICATION SECTION */
+
 .certification-header {
     display: flex;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin: 4rem 0;
 }
 
 .certification-header h1 {
     font-size: 4rem;
 }
 
+.certification-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    padding: 4rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.certification-card {
+    position: relative;
+    width: 90%;
+    height: 250px;
+    border-radius: var(--border-radius-1);
+    cursor: pointer;
+    margin: 0 auto;
+    transition: all 0.6s ease;
+    z-index: 1;
+}
+
+.certification-card img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--border-radius-1);
+    transition: all 0.6s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    z-index: 2;
+}
+
+.certification-card p {
+    position: absolute;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background: linear-gradient(135deg,
+            rgba(86, 85, 94, 0.95),
+            rgba(39, 40, 47, 0.9));
+    color: var(--color-white);
+    padding: 1.5rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 0 var(--border-radius-1) var(--border-radius-1) 0;
+    backdrop-filter: blur(8px);
+}
+
+/* Left side cards */
+.certification-card:nth-child(odd) p {
+    right: calc(100% - 2px);
+    transform: translateX(30px);
+    border-radius: var(--border-radius-1) 0 0 var(--border-radius-1);
+    background: linear-gradient(to right,
+            rgba(39, 40, 47, 0.9),
+            rgba(86, 85, 94, 0.95));
+}
+
+/* Right side cards */
+.certification-card:nth-child(even) p {
+    left: calc(100% - 2px);
+    transform: translateX(-30px);
+    border-radius: 0 var(--border-radius-1) var(--border-radius-1) 0;
+    background: linear-gradient(to left,
+            rgba(39, 40, 47, 0.9),
+            rgba(86, 85, 94, 0.95));
+}
+
+.certification-card:hover img {
+    transform: scale(1.05);
+}
+
+.certification-card:hover p {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@media (max-width: 768px) {
+    .certification-grid {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        gap: 3rem;
+    }
+
+    .certification-card {
+        margin-bottom: 80px;
+        width: 90%;
+    }
+
+    /* On mobile, make all text appear below the cards */
+    .certification-card:nth-child(odd) p,
+    .certification-card:nth-child(even) p {
+        left: 0;
+        right: 0;
+        top: calc(100% - 2px);
+        width: 100%;
+        transform: translateY(-20px);
+        border-radius: 0 0 var(--border-radius-1) var(--border-radius-1);
+        background: linear-gradient(to bottom,
+                rgba(86, 85, 94, 0.95),
+                rgba(39, 40, 47, 0.9));
+    }
+
+    .certification-card:hover p {
+        transform: translateY(0);
+    }
+}
+
+/* CERTIFICATION SECTION END*/
+
+/* DOWNLOAD RESUME SECTION */
+
+#download-resume {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 8rem;
+}
+
+.download-button {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: var(--border-radius-2);
+    padding: var(--border-radius-1);
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.download-button:hover {
+    color: var(--color-primary);
+}
+
+/* DOWNLOAD RESUME SECTION END */
 /* ========================= MAIN END ========================= */
 
 
