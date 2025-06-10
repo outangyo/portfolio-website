@@ -105,11 +105,10 @@ main {
     padding: var(--padding-1);
     margin: 0px;
     flex: 1;
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.5)),
-        url(./images/wallpaper3.jpg);
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(./images/wallpaper3.jpg); */
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .about-me-container {
@@ -239,6 +238,16 @@ main {
     }
 }
 
+.certification-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.certification-header h1 {
+    font-size: 4rem;
+}
+
 /* ========================= MAIN END ========================= */
 
 
@@ -348,6 +357,5 @@ footer p {
     font-size: 25px;
     margin-right: 0.5rem;
 }
-
 
 /* ========================= FOOTER END ========================= */
