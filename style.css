@@ -391,8 +391,6 @@ main {
     color: var(--color-primary);
 }
 
-
-
 .contact-grid-pic {
     flex: 1;
     align-items: center;
@@ -420,21 +418,46 @@ main {
     font-size: 14px;
 }
 
-
-
-
-
-
-
-
 /* CONTACT & BIO SECTION END*/
 
 /* RESUME SECTION */
 
 #resume {
-    justify-content: center;
+    margin-bottom: 9rem;
+}
+
+.resume-header {
     display: flex;
-    margin-bottom: 8rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.resume-header h1 {
+    font-size: 4rem;
+}
+
+.resume-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    background-color: linear-gradient(rgba(0, 0, 0, 0.5));
+}
+
+.resume-content img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    border-radius: var(--border-radius-1);
+    margin-bottom: 2rem;
+    transition: transform 0.6s ease;
+}
+
+.resume-content img:hover {
+    transform: scale(1.02);
 }
 
 .download-button {
