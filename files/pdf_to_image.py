@@ -1,6 +1,6 @@
 import fitz  # PyMuPDF
 
-doc = fitz.open("ResumeEN.pdf")
+doc = fitz.open("Transcript Th.pdf")
 
 for i, page in enumerate(doc):
     zoom = 2

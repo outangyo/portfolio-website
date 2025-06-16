@@ -105,7 +105,8 @@ main {
     padding: var(--padding-1);
     margin: 0px;
     flex: 1;
-    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(./images/wallpaper3.jpg); */
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(./images/test/wallpaper3.jpg); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5));
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -165,7 +166,7 @@ main {
 .project-header {
     display: flex;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin: 3rem 0;
 }
 
 .project-header h1 {
@@ -227,7 +228,7 @@ main {
 .certification-header {
     display: flex;
     justify-content: center;
-    margin: 4rem 0;
+    margin: 3rem 0;
 }
 
 .certification-header h1 {
@@ -350,9 +351,87 @@ main {
 
 /* CERTIFICATION SECTION END*/
 
-/* DOWNLOAD RESUME SECTION */
+/* CONTACT & BIO SECTION*/
+.contact-header {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+}
 
-#download-resume {
+.contact-header h1 {
+    font-size: 4rem;
+}
+
+.contact-grid {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 2rem 4rem;
+    margin-left: 8rem;
+}
+
+.contact-grid-bio {
+    flex: 2;
+    text-align: center;
+}
+
+.contact-grid .contact-grid-bio h1 {
+    margin-left: 1.8rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-grid a {
+    color: var(--color-white);
+    transition: color ease 0.3s;
+}
+
+.contact-grid a:hover {
+    color: var(--color-primary);
+}
+
+
+
+.contact-grid-pic {
+    flex: 1;
+    align-items: center;
+}
+
+.contact-grid-pic img {
+    min-width: 500px;
+    max-width: 700px;
+    height: 100%;
+    border-radius: var(--border-radius-1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.contact-grid p {
+    font-size: 18px;
+}
+
+.contact-grid-description {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-grid-description p {
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
+/* CONTACT & BIO SECTION END*/
+
+/* RESUME SECTION */
+
+#resume {
     justify-content: center;
     display: flex;
     margin-bottom: 8rem;
@@ -376,7 +455,7 @@ main {
     color: var(--color-primary);
 }
 
-/* DOWNLOAD RESUME SECTION END */
+/* RESUME SECTION END */
 /* ========================= MAIN END ========================= */
 
 
