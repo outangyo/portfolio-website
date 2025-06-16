@@ -166,7 +166,7 @@ main {
 .project-header {
     display: flex;
     justify-content: center;
-    margin: 3rem 0;
+    margin: 4rem 0;
 }
 
 .project-header h1 {
@@ -228,7 +228,7 @@ main {
 .certification-header {
     display: flex;
     justify-content: center;
-    margin: 3rem 0;
+    margin: 4rem 0;
 }
 
 .certification-header h1 {
@@ -355,7 +355,7 @@ main {
 .contact-header {
     display: flex;
     justify-content: center;
-    margin: 3rem 0;
+    margin: 4rem 0;
 }
 
 .contact-header h1 {
@@ -365,14 +365,16 @@ main {
 .contact-grid {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-around;
-    margin: 2rem 4rem;
-    margin-left: 8rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
 }
 
 .contact-grid-bio {
-    flex: 2;
+    flex: 0.5;
     text-align: center;
 }
 
@@ -385,6 +387,7 @@ main {
 .contact-grid a {
     color: var(--color-white);
     transition: color ease 0.3s;
+    text-decoration: none;
 }
 
 .contact-grid a:hover {
@@ -394,12 +397,31 @@ main {
 .contact-grid-pic {
     flex: 1;
     align-items: center;
+    height: 550px;
+    max-width: 550px;
+}
+
+.contact-grid-pic .carousel {
+    height: 100%;
+    width: 100%;
+}
+
+.contact-grid-pic .carousel-inner {
+    height: 100%;
+    width: 100%;
+    border-radius: var(--border-radius-1);
+}
+
+.contact-grid-pic .carousel-item {
+    height: 100%;
+    width: 100%;
+
 }
 
 .contact-grid-pic img {
-    min-width: 500px;
-    max-width: 700px;
+    width: 100%;
     height: 100%;
+    object-fit: cover;
     border-radius: var(--border-radius-1);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
