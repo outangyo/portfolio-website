@@ -184,6 +184,11 @@ main {
     max-width: 1250px;
 }
 
+.project-text ul li {
+    margin-bottom: 0.9rem;
+    line-height: 1.6;
+}
+
 .project-pic {
     flex: 0 0 400px;
     height: 300px;
@@ -201,6 +206,55 @@ main {
 
 .project-pic img:hover {
     transform: scale(1.1);
+}
+
+/* UPDATED PROJECT GALLERY DESIGN */
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    flex: 0 0 550px; /* ขยายขนาดฝั่งรูปให้ใหญ่ขึ้นเพื่อให้เห็น 4 รูปชัดๆ */
+}
+
+.gallery-item {
+    display: block; /* เพิ่มบรรทัดนี้ครับ */
+    width: 100%;
+    height: 180px; 
+    overflow: hidden;
+    border-radius: var(--border-radius-1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* Hover Effects */
+.gallery-item:hover {
+    border-color: var(--color-primary);
+    transform: translateY(-5px);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* ปรับ Responsive ให้แสดงผลดีในมือถือ */
+@media (max-width: 900px) {
+    .project-gallery {
+        flex: 1;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr); /* ยังคงเป็น 2 คอลัมน์บนมือถือ หรือจะปรับเป็น 1 ก็ได้ */
+    }
+    
+    .gallery-item {
+        height: 150px;
+    }
 }
 
 @media (max-width: 900px) {
