@@ -2,6 +2,9 @@
 
 Welcome to my portfolio! This repository showcases my expertise in Full-stack Software Development
 
+## 🔗 Live Demo
+> **Check out the live website here:** [https://outangyo.github.io/portfolio-website/](https://outangyo.github.io/portfolio-website/)
+
 ## 🚀 About Me
 - **Name:** Pongkorn Luangamornpisal (Mo)
 - **Current Role:** Full-stack Developer .NET Core.
@@ -24,7 +27,6 @@ A full-stack web application designed for enterprise-level asset tracking and ma
 - **Highlights:** - Dynamic CRUD operations with relational database architecture.
   - Granular Role Management (Admin, Manager, Guest).
   - Secure Authentication via social logins.
-  - Fully containerized using **Docker**.
 - **Repository:** [View Asset-Management-System](https://github.com/outangyo/Asset-Management-System)
 
 ---
