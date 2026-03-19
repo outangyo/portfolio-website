@@ -5,7 +5,7 @@ import os
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
 # 2. ชี้ไปที่ไฟล์ PDF (ใช้ชื่อให้ตรงกับไฟล์ในโฟลเดอร์)
-pdf_name = "Resume EN Developer.pdf" 
+pdf_name = "Pongkorn_FullStack_Developer_Resume.pdf" 
 pdf_path = os.path.join(current_dir, pdf_name)
 
 # ดึงชื่อไฟล์ออกมาโดยไม่มีนามสกุล (จะได้คำว่า "Resume EN Developer")
