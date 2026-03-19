@@ -432,6 +432,11 @@ main {
     text-align: center;
 }
 
+.contact-grid-bio i {
+    margin-right: 8px; 
+    color: #32c015;
+}
+
 .contact-grid .contact-grid-bio h1 {
     margin-left: 1.8rem;
     margin-top: 1rem;
